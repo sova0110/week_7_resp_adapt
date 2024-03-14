@@ -1,0 +1,392 @@
+.container 
+{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 13vh 70vh 3fr 1fr 1fr 10vh;
+    /*gap: 1rem;**/
+}
+.header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    text-align: center;
+    text-decoration: none;
+    a {
+        text-decoration: none;
+        color: darkblue;
+        font-family: "Ojuju";
+        font-weight: 900;
+    }
+}
+
+.header{
+    width: 100%;
+    height: 7vh;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 200;
+    font-family: "Ojuju";
+    font-weight: 600;
+}
+
+.menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    align-items: center;
+    justify-items: center;
+
+  }
+.main{
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    position:relative;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    p{
+        color: darkblue;
+        align-items: center;
+        font-family: "Ojuju";
+        font-size: 20px; 
+    }
+    
+}
+
+.main::after{
+    content: "";
+    background-image: url(/images/china.svg);
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.button_main{
+    min-width: 70px;
+    min-height: 50px;
+    width: 150px;
+    height: 50px;
+    background-color: darkblue;
+    color: yellow;
+    border-radius: 50%;
+    font-size: 25px;
+}
+#button_main:hover{
+    background-color: brown;
+    color:white;
+}
+.main h1{
+    color: darkblue;
+    align-items: center;
+    font-family: "Ojuju";
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.main h2{
+    color: darkblue;
+    align-items: center;
+    font-family: "Ojuju";
+    font-size: 50px;
+    font-weight: 700;
+}
+.first_lesson h2{
+    color: darkblue;
+    align-items: center;
+    font-family: "Ojuju";
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.aside {
+    grid-row: 3 / 5;
+    grid-column: 3 / 4;
+    text-align:left;
+    background-color: rgb(219, 237, 219);
+    color: darkblue;
+    font-family: "Ojuju";
+    font-size: 20px; 
+}
+.pic_cont1{
+    width: 100%;
+    height: 100%;
+    
+}
+.pic1{
+    width: 40%;
+    height: 40%;
+    float: right;
+    min-width: 10%;
+    min-height: 10%;
+}
+.footer {
+    grid-row: 6 / 7;
+    grid-column: 1 / 4;
+    text-align: center;
+    text-decoration: none;
+    a {
+        text-decoration: none;
+        color: darkblue;
+        font-family: "Ojuju";
+        font-weight: 900;
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 7vh;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 200;
+    font-family: "Ojuju";
+    font-weight: 600;
+    background-color: rgb(183, 183, 205);
+}
+
+.foot ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    align-items: center;
+    justify-items: center;
+
+  }
+
+.first_lesson{
+    grid-row: 5 / 6;
+    grid-column: 1 / 4;
+    color:darkblue;
+    font-size: 15px;
+    background-color: rgb(219, 237, 231);
+}
+.button_anketa
+{
+    font-size: 15px;
+    height: 40px;
+    width: 150px;
+    margin-right: 40px;
+    background-color: darkblue;
+    color: yellow;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.pic3,
+.pic2
+{
+    width: 40%;
+    height: 40%;
+}
+.cont1{
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    text-align: center;
+    color:darkblue;
+}
+.cont2{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    text-align: center;
+    color:darkblue;
+}
+
+.but
+{
+    font-size: 15px;
+    height: 40px;
+    width: 150px;
+    margin-right: 40px;
+    background-color: darkblue;
+    color: yellow;
+    border-radius: 50%;
+    font-size: 15px;
+}
+.but:hover
+{
+    background-color: brown;
+    color:white;
+}
+.teachers1{
+    grid-row: 4/5 ;
+    grid-column: 1 / 2;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.teachers2{
+    grid-row: 4 /5;
+    grid-column: 2 / 3;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+.pic4, .pic5{
+    width: 200px;
+    height: 200px;
+}
+.teachers1,
+.teachers2{
+    color:darkblue;
+    h3{
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+.logo{
+    width: 25%;
+    height: 25%;
+    align-items: center;
+    min-width: 7%;
+    min-height: 7%;
+}
+
+/*
+стили для смартфона (до 425px) все блоки в столбец
+**/
+@media screen and (max-width: 425px){
+    .container 
+        {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr;
+            grid-template-rows: 13vh 70vh 1fr 1fr 1fr 1fr 1fr 1fr 10vh;
+        }
+    .header{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        text-align: center;
+        text-decoration: none;
+        a {
+            text-decoration: none;
+            color: darkblue;
+            font-family: "Ojuju";
+            font-weight: 900;
+            font-size: 10px;
+        }
+        font-size: 10px;
+    }
+    .main{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+    .cont1{
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+    .cont2{
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+    }
+    .teachers1{
+        grid-row: 5 / 6;
+        grid-column: 1 / 2;
+    }
+    .teachers2{
+        grid-row: 6 / 7;
+        grid-column: 1 / 2;
+    }
+    .aside{
+        grid-row: 7 / 8;
+        grid-column: 1 / 2;
+    }
+    .first_lesson{
+        grid-row: 8 / 9;
+        grid-column: 1 / 2;
+    }
+    .footer{
+        grid-row: 9 / 10;
+        grid-column: 1 / 2;
+        font-size: 10px;
+    }
+        
+}
+/*
+стили для планшета (до 425px- 760px) все блоки, боковая область под основными блоками
+**/
+
+@media screen and (min-width: 426px) and (max-width:800px){
+    .container 
+        {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 13vh 70vh 1fr 1fr 1fr 1fr 10vh;
+        }
+    .header{
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+        text-align: center;
+        text-decoration: none;
+        a {
+            text-decoration: none;
+            color: darkblue;
+            font-family: "Ojuju";
+            font-weight: 900;
+            font-size: 10px;
+        }
+        font-size: 10px;
+    }
+    .main{
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+    .cont1{
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+    .cont2{
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+    .teachers1{
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+    }
+    .teachers2{
+        grid-row: 4 / 5;
+        grid-column: 2 / 3;
+    }
+    .aside{
+        grid-row: 5 / 6;
+        grid-column: 1 / 3;
+    }
+    .first_lesson{
+        grid-row: 6 / 7;
+        grid-column: 1 / 3;
+    }
+    .footer{
+        grid-row: 7 / 8;
+        grid-column: 1 / 3;
+        font-size: 10px;
+    }
+    .main h1{
+        font-size: 25px;
+    }
+    .main h2{
+        font-size: 20px;
+    }
+    .main h3{
+        font-size: 18px;
+    }
+    .main p{
+        font-size: 12px;
+    }
+    .button_main{
+        width: 70px;
+        height: 40px;
+        background-color: darkblue;
+        color: yellow;
+        border-radius: 50%;
+        font-size: 15px;
+    }
+        
+}
